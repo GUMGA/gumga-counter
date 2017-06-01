@@ -10,10 +10,16 @@
 </head>
 
 <body data-ng-controller="ctrl">
-  <h1>Gumga Counter</h1>
-  <form name="Example" novalidate>
-    <input type="text" gumga-counter ng-model="entity.name" gumga-max-length-text="10" />
-  </form>
+  <div class="container">
+    <h1>Gumga Counter</h1>
+    <form name="Example">
+      <input  type="text"
+              gumga-counter="ola mundo"
+              gumga-max-length-text="10"
+              ng-model="entity.name"
+              class="form-control"/>
+    </form>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="../node_modules/angular/angular.min.js"></script>
